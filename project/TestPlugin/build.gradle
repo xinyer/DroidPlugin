@@ -15,10 +15,10 @@ dependencies {
 android {
     signingConfigs {
         MySignConfig {
-            storeFile file(readProperty("key.store", "key.store"))
-            keyAlias readProperty("key.alias", "key.alias")
-            keyPassword readProperty("key.alias.password", "key.alias.password")
-            storePassword readProperty("key.store.password", "key.store.password")
+//            storeFile file(readProperty("key.store", "key.store"))
+//            keyAlias readProperty("key.alias", "key.alias")
+//            keyPassword readProperty("key.alias.password", "key.alias.password")
+//            storePassword readProperty("key.store.password", "key.store.password")
         }
     }
 
@@ -47,7 +47,7 @@ android {
     buildTypes {
         release {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), "proguard-project.txt"
-            signingConfig signingConfigs.MySignConfig
+//            signingConfig signingConfigs.MySignConfig
         }
     }
 }
